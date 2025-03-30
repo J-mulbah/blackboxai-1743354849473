@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | EcoHarmony</title>
+    <meta name="description" content="Comprehensive eco-friendly solutions for your business needs">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-green-600 text-2xl">EcoHarmony</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">About</a>
+                    <label class="dark-mode-toggle flex items-center cursor-pointer">
+                        <span class="dark-mode-text text-gray-500 hover:text-green-600 transition duration-300 mr-2">Dark Mode</span>
+                        <span class="relative">
+                            <input type="checkbox" class="sr-only" id="dark-toggle">
+                            <div class="toggle-slider w-10 h-5 bg-gray-300 rounded-full shadow-inner"></div>
+                            <div class="toggle-dot absolute w-3.5 h-3.5 bg-white rounded-full transition transform" style="top: 2px; left: 2px;"></div>
+                        </span>
+                    </label>
+                    <a href="services.html" class="py-4 px-2 text-green-600 border-b-4 border-green-600 font-semibold">Services</a>
+                    <a href="portfolio.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Portfolio</a>
+                    <a href="blog.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Blog</a>
+                    <a href="resources.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Resources</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="py-20 bg-green-600 text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg'); background-size: cover;">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Our African-Inspired Services</h1>
+            <p class="text-xl max-w-2xl mx-auto">Solutions rooted in traditional wisdom for modern sustainability challenges</p>
+            <p class="mt-4 italic">"Harambee - Let's pull together"</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Service 1 - Land Acquisition -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="service-icon text-green-600 mb-6 transition duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Gye_Nyame.svg/1200px-Gye_Nyame.svg.png" alt="Gye Nyame symbol" class="h-12 w-12 mx-auto">
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Ethical Land Acquisition</h3>
+                    <p class="text-gray-600 mb-6">Rooted in traditional land stewardship principles with modern ethical frameworks.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>FPIC (Free, Prior and Informed Consent) implementation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Community land rights protection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Environmental impact assessments</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-semibold mb-2 text-green-700">Case Study: Ghana Land Project</h4>
+                        <p class="text-sm text-gray-600">"Facilitated ethical land acquisition for 500+ hectares using Gye Nyame principles of respect and sustainability."</p>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service 2 - Stakeholder Engagement -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="service-icon text-green-600 mb-6 transition duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Sankofa.svg/1200px-Sankofa.svg.png" alt="Sankofa symbol" class="h-12 w-12 mx-auto">
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Stakeholder Engagement</h3>
+                    <p class="text-gray-600 mb-6">Building bridges between communities and businesses through African dialogue traditions.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Community consultation frameworks</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Traditional leadership engagement</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Conflict prevention strategies</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-semibold mb-2 text-green-700">Case Study: Nigeria Oil Community</h4>
+                        <p class="text-sm text-gray-600">"Used Sankofa-inspired dialogue to resolve decade-long disputes between oil companies and local communities."</p>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service 3 - Grievance Management -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="service-icon text-green-600 mb-6 transition duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Adinkra_Sun.svg/1200px-Adinkra_Sun.svg.png" alt="African sun symbol" class="h-12 w-12 mx-auto">
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Grievance Management</h3>
+                    <p class="text-gray-600 mb-6">Traditional conflict resolution methods adapted for modern business challenges.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Custom grievance mechanisms</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Elder mediation techniques</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Transparent tracking systems</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-semibold mb-2 text-green-700">Case Study: Kenyan Land Dispute</h4>
+                        <p class="text-sm text-gray-600">"Resolved 150+ land grievances using sun-inspired transparency principles and traditional mediation."</p>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service 4 - Training & Capacity Building -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="service-icon text-green-600 mb-6 transition duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Nsibidi_community.svg/1200px-Nsibidi_community.svg.png" alt="Nsibidi community symbol" class="h-12 w-12 mx-auto">
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Training & Capacity Building</h3>
+                    <p class="text-gray-600 mb-6">Empowering communities through knowledge sharing in the African tradition.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Land rights education</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Environmental stewardship training</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Cultural competency workshops</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-semibold mb-2 text-green-700">Case Study: Liberia Training Program</h4>
+                        <p class="text-sm text-gray-600">"Trained 300+ community leaders in sustainable land management using Nsibidi-inspired methods."</p>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Service 5 - Integrated Land Use Planning -->
+                <div class="service-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="service-icon text-green-600 mb-6 transition duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Adinkrahene.svg/1200px-Adinkrahene.svg.png" alt="Adinkrahene symbol" class="h-12 w-12 mx-auto">
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Integrated Land Use Planning</h3>
+                    <p class="text-gray-600 mb-6">Holistic approaches balancing development, conservation and community needs.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Sacred site preservation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Agricultural zoning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Conservation corridors</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-semibold mb-2 text-green-700">Case Study: Tanzania Land Plan</h4>
+                        <p class="text-sm text-gray-600">"Created Adinkrahene-inspired land use plan preserving cultural sites while enabling sustainable development."</p>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Pricing Plans</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="pricing-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-center">Basic</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold">$99</span>
+                        <span class="text-gray-500">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Initial sustainability assessment</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Monthly progress reports</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Email support</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded transition duration-300">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card bg-white p-8 rounded-lg shadow-lg border-2 border-green-500 transition duration-300 transform scale-105">
+                    <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl rounded-tr">
+                        POPULAR
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Pro</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold">$299</span>
+                        <span class="text-gray-500">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Comprehensive sustainability audit</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Bi-weekly consultation</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Custom action plan</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded transition duration-300">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-center">Enterprise</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold">Custom</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Full-service sustainability program</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Weekly on-site visits</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Employee training</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>24/7 dedicated support</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-gray-800 hover:bg-black text-white font-semibold py-3 px-6 rounded transition duration-300">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-green-600 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="md:flex items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white">Stay Updated</h3>
+                    <p class="text-green-100">Subscribe to our newsletter for eco-friendly tips</p>
+                </div>
+                <form class="newsletter-form flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Your email address" required 
+                           class="px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300">
+                    <button type="submit" 
+                            class="bg-white text-green-600 font-semibold px-6 py-3 rounded-lg hover:bg-green-50 transition">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="african-styles.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease forwards;
+        }
+        .dark {
+            background-color: #1a202c;
+            color: #f7fafc;
+        }
+        .dark .bg-white {
+            background-color: #2d3748;
+        }
+        .dark .bg-gray-100 {
+            background-color: #1a202c;
+        }
+        .dark .bg-gray-50 {
+            background-color: #2d3748;
+        }
+        .dark .bg-green-50 {
+            background-color: #1e4a5f;
+        }
+        .dark .text-gray-800 {
+            color: #e2e8f0;
+        }
+        .dark .text-gray-600 {
+            color: #cbd5e0;
+        }
+        .dark .bg-green-600 {
+            background-color: #1e4a5f;
+        }
+        .dark-mode-transition * {
+            transition: background-color 0.3s ease, color 0.2s ease;
+        }
+    </style>
+</body>
+</html>
