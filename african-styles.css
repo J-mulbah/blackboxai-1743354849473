@@ -1,0 +1,77 @@
+/* African Design Elements */
+.african-pattern-bg {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Kente_Cloth.jpg/800px-Kente_Cloth.jpg');
+    background-size: 300px;
+    background-blend-mode: overlay;
+    opacity: 0.08;
+    background-repeat: repeat;
+}
+
+.dark .african-pattern-bg {
+    opacity: 0.15;
+    background-blend-mode: soft-light;
+}
+
+.african-border-top {
+    border-top: 4px solid;
+    border-image: linear-gradient(90deg, #e1b12c, #7d4e24, #1e88e5) 1;
+}
+
+.dark .african-border-top {
+    border-image: linear-gradient(90deg, #f6c542, #9a5f2d, #4a9df5) 1;
+}
+
+.btn-african {
+    background: linear-gradient(135deg, #e1b12c 0%, #7d4e24 50%, #1e88e5 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.dark .btn-african {
+    background: linear-gradient(135deg, #f6c542 0%, #9a5f2d 50%, #4a9df5 100%);
+}
+
+.btn-african:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-african::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Kente_Cloth.jpg/800px-Kente_Cloth.jpg');
+    background-size: 200px;
+    opacity: 0.15;
+    mix-blend-mode: overlay;
+}
+
+.dark .btn-african::before {
+    opacity: 0.2;
+    mix-blend-mode: hard-light;
+}
+
+/* African color variables */
+:root {
+    --african-gold: #e1b12c;
+    --african-earth: #7d4e24;
+    --african-sky: #1e88e5;
+    --african-textile-opacity: 0.1;
+}
+
+.dark {
+    --african-gold: #f6c542;
+    --african-earth: #9a5f2d;
+    --african-sky: #4a9df5;
+    --african-textile-opacity: 0.2;
+}
+
+/* Dark mode transitions */
+.dark-mode-transition * {
+    transition: background-color 0.3s ease, color 0.2s ease;
+}
