@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Mulbah's Journey | EcoHarmony</title>
+    <meta name="description" content="The inspiring journey of James Mulbah from war refugee to environmental champion">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                              url('https://images.pexels.com/photos/4090407/pexels-photo-4090407.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: 100%;
+            width: 2px;
+            background: #22c55e;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-green-600 text-2xl">EcoHarmony</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">About</a>
+                    <a href="services.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Services</a>
+                    <a href="portfolio.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Portfolio</a>
+                    <a href="blog.html" class="py-4 px-2 text-green-600 border-b-4 border-green-600 font-semibold">Blog</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-image h-96 flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">From War Refugee to Environmental Champion</h1>
+            <h2 class="text-xl md:text-2xl">The Inspiring Journey of James Mulbah</h2>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="max-w-4xl mx-auto px-4 py-12">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <!-- Introduction -->
+            <div class="mb-12">
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    James Mulbah's amazing story shows how he went from being a war refugee to becoming a leader in protecting nature. His journey teaches us about strength, learning, and how to care for our planet in ways that work today while respecting old traditions.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="space-y-8">
+                <!-- Early Life -->
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600"></div>
+                    <h3 class="text-2xl font-semibold text-green-600 mb-2">Early Life in Liberia</h3>
+                    <p class="text-gray-600 mb-2">1990s - Monrovia, Liberia</p>
+                    <div class="text-gray-700 space-y-4">
+                        <p>When James was young, his country Liberia was at war. As the oldest child, he walked for two weeks with his parents to escape to Guinea. In their new home, James learned to be strong by helping his family grow food and find food in nature.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <img src="https://images.pexels.com/photos/4090410/pexels-photo-4090410.jpeg" alt="Refugee journey" class="rounded-lg">
+                            <img src="https://images.pexels.com/photos/4090411/pexels-photo-4090411.jpeg" alt="Farming" class="rounded-lg">
+                        </div>
+                        <p class="italic text-gray-500">"During these hard times, I learned how to farm and survive. I also learned why it's important to care for nature and respect our traditions."</p>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600"></div>
+                    <h3 class="text-2xl font-semibold text-green-600 mb-2">Education & Community Leadership</h3>
+                    <p class="text-gray-600 mb-2">2000s - Liberia</p>
+                    <div class="text-gray-700 space-y-4">
+                        <p>When the war ended, James went back to Liberia to finish school. He studied how people live together at the University of Liberia. He became a leader by working with youth groups and his church, where he helped young people all over the country.</p>
+                        <p>Later, he traveled to different countries in West Africa teaching young people how to make their communities better and solve problems peacefully.</p>
+                    </div>
+                </div>
+
+                <!-- Environmental Awakening -->
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600"></div>
+                    <h3 class="text-2xl font-semibold text-green-600 mb-2">Environmental Awakening</h3>
+                    <p class="text-gray-600 mb-2">2010 - Guinea</p>
+                    <div class="text-gray-700 space-y-4">
+                        <p>An important change happened when James visited his old village in Guinea. The village was empty because the trees had been cut down, making the river too dirty to use. The people had to move away.</p>
+                        <img src="https://images.pexels.com/photos/4090412/pexels-photo-4090412.jpeg" alt="Deforestation" class="rounded-lg">
+                        <p class="italic text-gray-500">"This changed everything for me. I saw how cutting down too many trees can hurt whole communities."</p>
+                    </div>
+                </div>
+
+                <!-- Professional Work -->
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-green-600"></div>
+                    <h3 class="text-2xl font-semibold text-green-600 mb-2">Environmental Leadership</h3>
+                    <p class="text-gray-600 mb-2">2013-Present - West Africa</p>
+                    <div class="text-gray-700 space-y-4">
+                        <p>James's work experience:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Studied at the Centre for Social Excellence (Earthworm Foundation)</li>
+                            <li>Helped companies be greener at Golden Veroleum Liberia</li>
+                            <li>Managed projects for Earthworm Foundation in Ghana</li>
+                            <li>Now works helping businesses protect nature at Rainforest Builder Ghana</li>
+                        </ul>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <img src="https://images.pexels.com/photos/4090413/pexels-photo-4090413.jpeg" alt="Community work" class="rounded-lg">
+                            <img src="https://images.pexels.com/photos/4090414/pexels-photo-4090414.jpeg" alt="Sustainable farming" class="rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Publications -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Key Publications</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-600">Forest Wisdom</h4>
+                        <p class="text-gray-600">Nature's Blueprint for Business Knowledge Systems</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-600">From Conflict to Cooperation</h4>
+                        <p class="text-gray-600">Resolving Agricultural Land Disputes in Africa</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-600">The Sacred Balance</h4>
+                        <p class="text-gray-600">Merging Ancestral Land Practices with 21st Century Development</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-600">The Garden of Stakeholders</h4>
+                        <p class="text-gray-600">Cultivating Sustainable Business Relationships in West Africa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-12 text-center">
+                <a href="contact.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-md transition duration-300">
+                    Get Involved in Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EcoHarmony</h3>
+                    <p class="text-gray-400">Helping businesses achieve sustainability through innovative solutions and expert guidance.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Sustainability Audits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Waste Reduction</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Renewable Energy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Employee Training</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 EcoHarmony. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
