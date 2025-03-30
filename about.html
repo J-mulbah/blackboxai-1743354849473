@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | EcoHarmony</title>
+    <meta name="description" content="Learn about our mission and team dedicated to sustainable business solutions">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-green-600 text-2xl">EcoHarmony</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-green-600 border-b-4 border-green-600 font-semibold">About</a>
+                    <label class="dark-mode-toggle flex items-center cursor-pointer">
+                        <span class="dark-mode-text text-gray-500 hover:text-green-600 transition duration-300 mr-2">Dark Mode</span>
+                        <span class="relative">
+                            <input type="checkbox" class="sr-only" id="dark-toggle">
+                            <div class="toggle-slider w-10 h-5 bg-gray-300 rounded-full shadow-inner"></div>
+                            <div class="toggle-dot absolute w-3.5 h-3.5 bg-white rounded-full transition transform" style="top: 2px; left: 2px;"></div>
+                        </span>
+                    </label>
+                    <a href="services.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Services</a>
+                    <a href="portfolio.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Portfolio</a>
+                    <a href="blog.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Blog</a>
+                    <a href="resources.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Resources</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mission Section -->
+    <section class="py-16 bg-green-600 text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/1051838/pexels-photo-1051838.jpeg'); background-size: cover;">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Our African Mission</h2>
+            <p class="text-xl max-w-3xl mx-auto">"At EcoHarmony, we blend traditional African wisdom with modern solutions to help businesses grow while caring for our land."</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-green-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Vision</h3>
+                    <p>An Africa where businesses honor our ancestors by protecting nature.</p>
+                </div>
+                <div class="bg-green-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Values</h3>
+                    <p>Ubuntu (community), African innovation, Integrity, and Sustainable impact.</p>
+                </div>
+                <div class="bg-green-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Approach</h3>
+                    <p>We combine African wisdom and modern science to create solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Meet Our Team</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="team-member bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <img src="https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg" alt="Naledi Molefe" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-center mb-1">Naledi Molefe</h3>
+                    <p class="text-green-600 text-center mb-4">CEO & Founder</p>
+                    <p class="text-gray-600 text-center">15+ years blending African traditions with environmental work across the continent.</p>
+                </div>
+                <div class="team-member bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <img src="https://images.pexels.com/photos/4662950/pexels-photo-4662950.jpeg" alt="Kwame Asante" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-center mb-1">Kwame Asante</h3>
+                    <p class="text-green-600 text-center mb-4">Head of Operations</p>
+                    <p class="text-gray-600 text-center">Pioneers African circular economy models based on traditional waste-reduction practices.</p>
+                </div>
+                <div class="team-member bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <img src="https://images.pexels.com/photos/4530812/pexels-photo-4530812.jpeg" alt="Amina Diallo" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold text-center mb-1">Amina Diallo</h3>
+                    <p class="text-green-600 text-center mb-4">Sustainability Analyst</p>
+                    <p class="text-gray-600 text-center">Combines indigenous knowledge with modern sustainability tools from Senegal to South Africa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                    <img src="https://images.pexels.com/photos/5384446/pexels-photo-5384446.jpeg" alt="AfriGreen Solutions" class="w-12 h-12 rounded-full mr-4 object-cover">
+                    <div>
+                        <h4 class="font-semibold">AfriGreen Solutions</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"EcoHarmony's African wisdom helped us cut emissions by 40% while creating jobs in our community. Their approach is uniquely African."</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                    <img src="https://images.pexels.com/photos/4662951/pexels-photo-4662951.jpeg" alt="Ubuntu Packaging" class="w-12 h-12 rounded-full mr-4 object-cover">
+                    <div>
+                        <h4 class="font-semibold">Ubuntu Packaging</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"By combining traditional African methods with modern tech, EcoHarmony helped us save $200,000 while keeping our community clean and creating local jobs."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-green-600 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="md:flex items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white">Stay Updated</h3>
+                    <p class="text-green-100">Subscribe to our newsletter for eco-friendly tips</p>
+                </div>
+                <form class="newsletter-form flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Your email address" required 
+                           class="px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300">
+                    <button type="submit" 
+                            class="bg-white text-green-600 font-semibold px-6 py-3 rounded-lg hover:bg-green-50 transition">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="african-styles.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease forwards;
+        }
+        .dark {
+            background-color: #1a202c;
+            color: #f7fafc;
+        }
+        .dark .bg-white {
+            background-color: #2d3748;
+        }
+        .dark .text-gray-800 {
+            color: #e2e8f0;
+        }
+        .dark .text-gray-600 {
+            color: #cbd5e0;
+        }
+        .dark .bg-gray-100 {
+            background-color: #1a202c;
+        }
+        .dark .bg-green-700 {
+            background-color: #1e4a5f;
+        }
+        .dark-mode-transition * {
+            transition: background-color 0.3s ease, color 0.2s ease;
+        }
+    </style>
+</body>
+</html>
