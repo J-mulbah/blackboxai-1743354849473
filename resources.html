@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources | EcoHarmony</title>
     <meta name="description" content="Expert guides and publications on sustainable development">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -16,32 +16,47 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
+        @media (max-width: 768px) {
+            .resource-card .flex {
+                flex-direction: column;
+            }
+            .resource-card .bg-green-100 {
+                margin-bottom: 1rem;
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 dark:bg-gray-900">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white dark:bg-gray-800 shadow-lg">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between">
                 <div class="flex space-x-7">
                     <div>
                         <a href="index.html" class="flex items-center py-4 px-2">
-                            <span class="font-semibold text-green-600 text-2xl">EcoHarmony</span>
+                            <span class="font-semibold text-green-600 dark:text-green-400 text-2xl">EcoHarmony</span>
                         </a>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Home</a>
-                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">About</a>
-                    <a href="services.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Services</a>
-                    <a href="portfolio.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Portfolio</a>
-                    <a href="blog.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Blog</a>
-                    <a href="resources.html" class="py-4 px-2 text-green-600 border-b-4 border-green-600 font-semibold">Resources</a>
-                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-green-600 transition duration-300">Contact</a>
+                    <label class="relative inline-flex items-center cursor-pointer mr-4">
+                        <input type="checkbox" id="dark-toggle" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
+                        <span class="ml-3 text-sm font-medium text-gray-500 dark:text-gray-300">Dark Mode</span>
+                    </label>
+                    <a href="index.html" class="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition duration-300">Home</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition duration-300">About</a>
+                    <a href="services.html" class="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition duration-300">Services</a>
+                    <a href="portfolio.html" class="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition duration-300">Portfolio</a>
+                    <a href="previous-works.html" class="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition duration-300">Previous Works</a>
+                    <a href="blog.html" class="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition duration-300">Blog</a>
+                    <a href="resources.html" class="py-4 px-2 text-green-600 dark:text-green-400 border-b-4 border-green-600 dark:border-green-400 font-semibold">Resources</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition duration-300">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button class="outline-none mobile-menu-button">
-                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                        <i class="fas fa-bars text-gray-500 dark:text-gray-300 text-xl"></i>
                     </button>
                 </div>
             </div>
@@ -49,31 +64,60 @@
     </nav>
 
     <!-- Resources Header -->
-    <section class="py-20 bg-green-600 text-white">
+    <section class="py-20 bg-green-600 dark:bg-green-700 text-white">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <h1 class="text-4xl font-bold mb-4">Expert Resources</h1>
-            <p class="text-xl max-w-2xl mx-auto">Guides and publications on sustainable development</p>
+            <h1 class="text-4xl font-bold mb-4">Sacred Waters, Sustainable Future</h1>
+            <p class="text-xl max-w-2xl mx-auto">Rivers are not just waterbodies, they are gods. They protect the environment and mankind where they are. Learning and respecting their values can sustain the business and workers.</p>
+        </div>
+    </section>
+
+    <!-- River Values -->
+    <section class="py-12 bg-green-50 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg">
+                        <i class="fas fa-leaf text-4xl text-green-600 dark:text-green-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 dark:text-white">Harmony with Nature</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Living in balance with our environment, recognizing the interconnectedness of all living things.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg">
+                        <i class="fas fa-hands-holding-circle text-4xl text-green-600 dark:text-green-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 dark:text-white">Respect</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Honoring traditional wisdom and showing deep reverence for nature's sacred elements.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white dark:bg-gray-700 rounded-lg p-6 shadow-lg">
+                        <i class="fas fa-lightbulb text-4xl text-green-600 dark:text-green-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 dark:text-white">Learning & Reflection</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Continuously learning from nature and reflecting these lessons in our actions and decisions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Resources Content -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white dark:bg-gray-800">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Ethical Land Acquisition Guide -->
-                <article class="resource-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                <article class="resource-card bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
                     <div class="flex items-start mb-4">
-                        <div class="bg-green-100 p-3 rounded-lg mr-4">
-                            <i class="fas fa-book-open text-green-600 text-2xl"></i>
+                        <div class="bg-green-100 dark:bg-green-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-book-open text-green-600 dark:text-green-400 text-2xl"></i>
                         </div>
                         <div>
-                            <h2 class="text-xl font-bold mb-1">From Ground Up</h2>
-                            <p class="text-gray-500 text-sm mb-2">A Guide to Ethical Land Acquisition in African Markets</p>
-                            <p class="text-gray-600 mb-4">Comprehensive framework harmonizing business objectives with community needs and environmental protection.</p>
+                            <h2 class="text-xl font-bold mb-1 dark:text-white">From Ground Up</h2>
+                            <p class="text-gray-500 dark:text-gray-300 text-sm mb-2">A Guide to Ethical Land Acquisition in African Markets</p>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Comprehensive framework harmonizing business objectives with community needs and environmental protection.</p>
                             
                             <div class="mb-4">
-                                <h3 class="font-semibold text-gray-800 mb-2">Key Sections:</h3>
-                                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Key Sections:</h3>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-600 dark:text-gray-400">
                                     <li>Understanding Africa's dual land tenure systems</li>
                                     <li>FPIC (Free, Prior and Informed Consent) best practices</li>
                                     <li>High Conservation Value area protection</li>
@@ -83,13 +127,13 @@
                             </div>
 
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Land Rights</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Community Engagement</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Sustainability</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Land Rights</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Community Engagement</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Sustainability</span>
                             </div>
 
                             <a href="from-ground-up-a-guide-to-ethical-land-acquisition-in-african-markets (2).docx" 
-                               class="text-green-600 font-semibold hover:text-green-700 transition duration-300 inline-flex items-center">
+                               class="text-green-600 dark:text-green-400 font-semibold hover:text-green-700 dark:hover:text-green-300 transition duration-300 inline-flex items-center">
                                 Download Full Guide <i class="fas fa-download ml-2"></i>
                             </a>
                         </div>
@@ -97,19 +141,19 @@
                 </article>
 
                 <!-- Cultural Taboos Guide -->
-                <article class="resource-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                <article class="resource-card bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
                     <div class="flex items-start mb-4">
-                        <div class="bg-green-100 p-3 rounded-lg mr-4">
-                            <i class="fas fa-tree text-green-600 text-2xl"></i>
+                        <div class="bg-green-100 dark:bg-green-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-tree text-green-600 dark:text-green-400 text-2xl"></i>
                         </div>
                         <div>
-                            <h2 class="text-xl font-bold mb-1">Cultural Taboo Days in Forest Reserves</h2>
-                            <p class="text-gray-500 text-sm mb-2">Challenges and Solutions for Conservation</p>
-                            <p class="text-gray-600 mb-4">Exploring the intersection of traditional practices and modern forest management in Ghana.</p>
+                            <h2 class="text-xl font-bold mb-1 dark:text-white">Cultural Taboo Days in Forest Reserves</h2>
+                            <p class="text-gray-500 dark:text-gray-300 text-sm mb-2">Challenges and Solutions for Conservation</p>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Exploring the intersection of traditional practices and modern forest management in Ghana.</p>
                             
                             <div class="mb-4">
-                                <h3 class="font-semibold text-gray-800 mb-2">Key Insights:</h3>
-                                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Key Insights:</h3>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-600 dark:text-gray-400">
                                     <li>24 identified taboo days across communities</li>
                                     <li>Religious, social and conservation significance</li>
                                     <li>Case studies from Bibiani forest reserves</li>
@@ -118,32 +162,33 @@
                             </div>
 
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Cultural Heritage</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Forest Conservation</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Community Engagement</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Cultural Heritage</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Forest Conservation</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Community Engagement</span>
                             </div>
 
                             <a href="Cultural%20taboo%20days%20in%20forest%20reserve%20communities%20challenges%20and%20solutions.docx" 
-                               class="text-green-600 font-semibold hover:text-green-700 transition duration-300 inline-flex items-center">
+                               class="text-green-600 dark:text-green-400 font-semibold hover:text-green-700 dark:hover:text-green-300 transition duration-300 inline-flex items-center">
                                 Download Report <i class="fas fa-download ml-2"></i>
                             </a>
                         </div>
                     </div>
                 </article>
+
                 <!-- Forest Wisdom Guide -->
-                <article class="resource-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                <article class="resource-card bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
                     <div class="flex items-start mb-4">
-                        <div class="bg-green-100 p-3 rounded-lg mr-4">
-                            <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                        <div class="bg-green-100 dark:bg-green-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-seedling text-green-600 dark:text-green-400 text-2xl"></i>
                         </div>
                         <div>
-                            <h2 class="text-xl font-bold mb-1">Forest Wisdom</h2>
-                            <p class="text-gray-500 text-sm mb-2">Nature's Blueprint for Business Knowledge Systems</p>
-                            <p class="text-gray-600 mb-4">Applying ecological principles to organizational knowledge management.</p>
+                            <h2 class="text-xl font-bold mb-1 dark:text-white">Forest Wisdom</h2>
+                            <p class="text-gray-500 dark:text-gray-300 text-sm mb-2">Nature's Blueprint for Business Knowledge Systems</p>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Applying ecological principles to organizational knowledge management.</p>
                             
                             <div class="mb-4">
-                                <h3 class="font-semibold text-gray-800 mb-2">Key Insights:</h3>
-                                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Key Insights:</h3>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-600 dark:text-gray-400">
                                     <li>Traditional ecological knowledge models</li>
                                     <li>Case studies from West African enterprises</li>
                                     <li>Standard Operating Procedures framework</li>
@@ -152,66 +197,33 @@
                             </div>
 
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Knowledge Management</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Organizational Resilience</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Sustainable Systems</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Knowledge Management</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Organizational Resilience</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Sustainable Systems</span>
                             </div>
 
                             <a href="forest-wisdom-natures-blueprint-for-business-knowledge-systems.docx" 
-                               class="text-green-600 font-semibold hover:text-green-700 transition duration-300 inline-flex items-center">
+                               class="text-green-600 dark:text-green-400 font-semibold hover:text-green-700 dark:hover:text-green-300 transition duration-300 inline-flex items-center">
                                 Download Guide <i class="fas fa-download ml-2"></i>
                             </a>
                         </div>
                     </div>
                 </article>
-                <!-- Conflict to Cooperation Guide -->
-                <article class="resource-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-green-100 p-3 rounded-lg mr-4">
-                            <i class="fas fa-handshake text-green-600 text-2xl"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-xl font-bold mb-1">From Conflict to Cooperation</h2>
-                            <p class="text-gray-500 text-sm mb-2">Resolving Agricultural Land Disputes in Africa</p>
-                            <p class="text-gray-600 mb-4">Framework for transforming land conflicts into sustainable partnerships.</p>
-                            
-                            <div class="mb-4">
-                                <h3 class="font-semibold text-gray-800 mb-2">Key Insights:</h3>
-                                <ul class="list-disc pl-5 space-y-1 text-gray-600">
-                                    <li>Root causes of agricultural land conflicts</li>
-                                    <li>Effective grievance management systems</li>
-                                    <li>Case studies of successful resolutions</li>
-                                    <li>Standard Operating Procedures for dispute resolution</li>
-                                </ul>
-                            </div>
 
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Conflict Resolution</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Land Disputes</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Stakeholder Engagement</span>
-                            </div>
-
-                            <a href="from-conflict-to-cooperation-resolving-agricultural-land-disputes-in-africa.docx" 
-                               class="text-green-600 font-semibold hover:text-green-700 transition duration-300 inline-flex items-center">
-                                Download Guide <i class="fas fa-download ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </article>
                 <!-- Garden of Stakeholders Guide -->
-                <article class="resource-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                <article class="resource-card bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
                     <div class="flex items-start mb-4">
-                        <div class="bg-green-100 p-3 rounded-lg mr-4">
-                            <i class="fas fa-users text-green-600 text-2xl"></i>
+                        <div class="bg-green-100 dark:bg-green-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-users text-green-600 dark:text-green-400 text-2xl"></i>
                         </div>
                         <div>
-                            <h2 class="text-xl font-bold mb-1">The Garden of Stakeholders</h2>
-                            <p class="text-gray-500 text-sm mb-2">Cultivating Sustainable Business Relationships in West Africa</p>
-                            <p class="text-gray-600 mb-4">Framework for nurturing productive stakeholder ecosystems.</p>
+                            <h2 class="text-xl font-bold mb-1 dark:text-white">The Garden of Stakeholders</h2>
+                            <p class="text-gray-500 dark:text-gray-300 text-sm mb-2">Cultivating Sustainable Business Relationships in West Africa</p>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Framework for nurturing productive stakeholder ecosystems.</p>
                             
                             <div class="mb-4">
-                                <h3 class="font-semibold text-gray-800 mb-2">Key Insights:</h3>
-                                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <h3 class="font-semibold text-gray-800 dark:text-gray-200 mb-2">Key Insights:</h3>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-600 dark:text-gray-400">
                                     <li>Stakeholder mapping and engagement strategies</li>
                                     <li>Case studies from West African enterprises</li>
                                     <li>Conflict prevention and resolution techniques</li>
@@ -220,13 +232,13 @@
                             </div>
 
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Stakeholder Engagement</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Community Relations</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Sustainable Partnerships</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Stakeholder Engagement</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Community Relations</span>
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-800 text-green-800 dark:text-green-200 rounded-full text-xs">Sustainable Partnerships</span>
                             </div>
 
                             <a href="the-garden-of-stakeholders-cultivating-sustainable-business-relationships-in-west-africa%20(1).docx" 
-                               class="text-green-600 font-semibold hover:text-green-700 transition duration-300 inline-flex items-center">
+                               class="text-green-600 dark:text-green-400 font-semibold hover:text-green-700 dark:hover:text-green-300 transition duration-300 inline-flex items-center">
                                 Download Guide <i class="fas fa-download ml-2"></i>
                             </a>
                         </div>
@@ -238,50 +250,48 @@
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
-        <!-- Footer content copied from index.html -->
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EcoHarmony</h3>
+                    <p class="text-gray-400">Helping businesses achieve sustainability through innovative solutions and expert guidance.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Sustainability Audits</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Waste Reduction</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Renewable Energy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Employee Training</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r-md transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 EcoHarmony. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
     <link rel="stylesheet" href="african-styles.css">
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeIn {
-            animation: fadeIn 1s ease forwards;
-        }
-        .dark {
-            background-color: #1a202c;
-            color: #f7fafc;
-        }
-        .dark .bg-white {
-            background-color: #2d3748;
-        }
-        .dark .bg-gray-50 {
-            background-color: #2d3748;
-        }
-        .dark .bg-gray-100 {
-            background-color: #1a202c;
-        }
-        .dark .bg-green-600 {
-            background-color: #1e4a5f;
-        }
-        .dark .bg-green-100 {
-            background-color: #2d4b5a;
-        }
-        .dark .text-gray-600 {
-            color: #cbd5e0;
-        }
-        .dark .text-gray-800 {
-            color: #e2e8f0;
-        }
-        .dark .text-green-800 {
-            color: #a0c4e0;
-        }
-        .dark-mode-transition * {
-            transition: background-color 0.3s ease, color 0.2s ease;
-        }
-    </style>
 </body>
 </html>
