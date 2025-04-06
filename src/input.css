@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .resource-card .flex {
+      flex-direction: column;
+    }
+    .resource-card .bg-green-100 {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+  }
+}
